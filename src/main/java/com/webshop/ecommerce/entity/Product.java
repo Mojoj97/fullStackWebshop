@@ -44,10 +44,11 @@ public class Product {
     private int unitsInStock;
 
     @Column(name = "date_created")
-    @CreationTimestamp //Hibernate will automatically manage the timestamps --> no need to manually manage
+    @CreationTimestamp
     private Date dateCreated;
 
     @Column(name = "last_updated")
     @UpdateTimestamp
     private Date lastUpdated;
 }
+
